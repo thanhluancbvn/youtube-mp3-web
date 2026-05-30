@@ -39,7 +39,7 @@ app.get("/download", (req, res) => {
     finished = false
     filename = ""
 
-    const getTitle = spawn(".\\yt-dlp", [
+    const getTitle = spawn("yt-dlp", [
 
         "--get-title",
 
@@ -79,7 +79,7 @@ app.get("/download", (req, res) => {
 
         }
 
-        const yt = spawn(".\\yt-dlp.", [
+        const yt = spawn("yt-dlp.", [
 
             "--js-runtimes",
             "node",
